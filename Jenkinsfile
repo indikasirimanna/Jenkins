@@ -4,7 +4,7 @@ pipeline{
         stages{
             stage('Deploy to Remote'){
                 steps{
-                    sh 'scp ${WORKSPACE}/* slpauser@10.70.4.37:/sampleJenkinfile/'
+                    sh 'scp ${WORKSPACE}/* root@10.105.4.105:8088/dashboard//sampleJenkinfile/'
                 }
             }
         }
